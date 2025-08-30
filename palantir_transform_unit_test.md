@@ -1,4 +1,4 @@
-## Palantir Unit Tests Guide
+# Palantir Unit Tests Guide
 
 Here is the short version of how Foundry teams unit test Python transforms, with the Stack Overflow example you shared as the concrete pattern.
 
@@ -82,6 +82,6 @@ Where these pieces come from
 	•	Palantir’s official docs show CSV-fixture tests, mocking inputs and outputs, pytest discovery rules, and how results appear in Checks. They also show Spark-specific assertions and enabling testing plugins.  ￼
 
 
-My Learnings:
+## My Learnings:
 
 To create a unit test for a transform operation in Palantir Foundry, I will have to create toy datasets and perform the exact operations which are being performed in the transform pipeline such that the output schema of the test should match the output schema for the pipeline. 
